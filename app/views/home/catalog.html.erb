@@ -1,0 +1,28 @@
+<br/ ><br/ ><br/ >
+<center><h1>Our Available Products </h1></center>
+<br/ ><br/ >
+
+<center><table>
+  <thead>
+    <tr>
+      <th>Product<br/ ><br/ ></th>
+      <th>Description<br/ ><br/ ></th>
+      <th>Price<br/ ><br/ ></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      
+      <% Product.all.each do |product| %>
+      <tr>
+        <td align='center'><%= product.productname %><br/ ><%= image_tag product.productimage, size:"100x100" %><br/ ><br/ ><br/ ></td>
+        <td align='center'><%= product.productdescription %></td>
+        <td align='center'><%= number_to_currency(product.price) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table></center>
+
+<br>
+
+<p align='center'> <%= link_to "Return to Home Page", root_path %> </p>

@@ -1,0 +1,95 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+}
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color:  green; }
+a:visited { color: brown; }
+a:hover { color: blueviolet; }
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+} 
+
+#topbanner {
+    margin: 0 auto;
+    height:250px;
+    width: 50%;
+    background-image: url("sports.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+product {
+    margin: 5px;
+    border: 2px solid #ccc;
+    float: left;
+	background: #ffffe6;
+	box-shadow: 5px 5px 2px #888888;
+	min-width: 200px;
+	max-width: 200px;
+	min-height: 200px;
+	max-height: 200px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all .2s ease-in-out;
+}
+
+product:hover {
+     transform: scale(1.1);
+}
+  
+   #tablepresent2 {
+     height:175px;
+	 width: 175px;
+	 background-color: #F7D0B7; }
+	 
+
+

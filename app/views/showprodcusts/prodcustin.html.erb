@@ -1,0 +1,23 @@
+<h2>Please enter the Name of the product for which you want the customers </h2>
+
+
+
+<%= form_tag(showprodcusts_prodcustout_path, :controller => "showprodcusts", :action => "prodcustout", :method => "post") do %>
+   
+  <div class="field">
+    
+      <%= label_tag :Product_Name %><br />
+   
+      <%= text_field_tag :product_name_in %>
+  </div>
+   
+ 
+
+      <div class="actions">
+    
+          <%= submit_tag "Submit Product Name" %>
+  </div>
+
+   <% end %>
+
+<% link_to 'Output Customers', showprodcusts_prodcustout_path %>

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  statename: MyString
+  abbreviation: MyString
+
+two:
+  statename: MyString
+  abbreviation: MyString

@@ -1,0 +1,13 @@
+<center><h1>These are the Customers that bought <%= @product_name %> </h1></center><br /> <br />
+    
+  <center><table width = 65% border = 1> 
+     <tr> <th> Last Name </th><th> First Name </th>  <th> ID </th> <th> City </th> <th> State </th></tr>   
+      <% @customer_list.each do |m| %>
+      
+                
+      <tr> <td> <%= m.lastname  %> </td> <td> <%= m.firstname  %> </td> <td> <%= m.id  %> </td> <td> <%= m.city %> </td> <td> <%=State.find(m.state_id).statename %> </td> </tr> 
+      <% end %> </table> </center><br /> <br />
+	  
+<p align='center'> <%= link_to "Another Customer List", showprodcusts_prodcustin_path %> </p>	
+<p align='center'> <%= link_to "Return to Home Page", root_path %> </p>	
+<p align='center'> <%= link_to "Back to Maintenance Page", dbtables_showdbtables_path %> </p>

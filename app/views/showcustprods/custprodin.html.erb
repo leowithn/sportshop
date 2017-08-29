@@ -1,0 +1,23 @@
+<h2>Please enter the Lastname of the customer for whom you want to view products bought </h2>
+
+
+
+<%= form_tag(showcustprods_custprodout_path, :controller => "showcustprods", :action => "custprodout", :method => "post") do %>
+   
+  <div class="field">
+    
+         <%= label_tag :Customer_Name %><br />
+   
+         <%= text_field_tag :customer_name_in %>
+  </div>
+   
+ 
+
+      <div class="actions">
+    
+          <%= submit_tag "Submit Customer Name" %>
+  </div>
+
+   <% end %>
+
+<% link_to 'Output Products Bought', showcustprods_custprodout_path %>

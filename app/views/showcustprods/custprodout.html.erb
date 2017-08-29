@@ -1,0 +1,13 @@
+<center><h1>These are the Products bought by <%= @customer_name %> </h1></center><br /> <br />
+    
+  <center><table width = 65% border = 1> 
+     <tr> <th> Product Name </th><th> Description </th>  <th> Price </th></tr>   
+      <% @product_list.each do |m| %>
+      
+                
+      <tr> <td> <%= m.productname  %> </td> <td> <%= m.productdescription %> </td> <td> <%=h number_to_currency(m.price) %> </td> </tr> 
+      <% end %> </table> </center><br /> <br />
+	  
+<p align='center'> <%= link_to "Another Product List", showcustprods_custprodin_path %> </p>	
+<p align='center'> <%= link_to "Return to Home Page", root_path %> </p>	
+<p align='center'> <%= link_to "Back to Maintenance Page", dbtables_showdbtables_path %> </p>
